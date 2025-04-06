@@ -1,0 +1,292 @@
+/* Reset geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container para centralizar conteúdo */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos gerais */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Navbar moderna */
+.navbar {
+    background-color: rgba(40, 167, 69, 0.9); /* Verde com leve transparência */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Navbar ao rolar a página */
+.navbar.scrolled {
+    background-color: #28a745;
+}
+
+/* Estilo do logo */
+.navbar .navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 2.0rem;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+/* Menu de navegação */
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-right: 40px;
+}
+
+/* Estilização dos links */
+.navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    background: #218838;
+}
+
+/* Banner com imagem de fundo */
+.carousel-img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .navbar-nav li {
+        margin-bottom: 10px;
+    }
+    .carousel-img {
+        height: 50vh;
+    }
+}
+
+/* Seções principais */
+.sobre, .servicos, .produtos, .contato, .publico-alvo, .video-apresentacao {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.produtos{
+    background-color: #28a745;
+}
+
+.sobre p, .publico-alvo p {
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.sobre1 {
+    background-color: #28a745;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.sobre1 p, .sobre1 h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+
+}
+
+.texto-maior {
+    font-size: 1.5em;
+}
+.servicos{
+    background-color: rgba(248, 249, 250, 0.205);
+
+}
+
+.publico-alvo {
+    background-color: #28a745;
+    color: #f4f4f4;
+    text-shadow: 3px 3px 3px #333;
+}
+
+.video-apresentacao {
+    background-color: rgba(248, 249, 250, 0.205);
+
+}
+
+.video-apresentacao video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Estilização dos cards */
+.card {
+    display: inline-block;
+    width: 20%;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Seção de endereço */
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+}
+
+.localizacao-container {
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+}
+
+.localizacao-container h1{
+    font-size: 2.5rem;
+}
+.localizacao-container p{
+    font-size: 1.3rem;
+}
+
+.botao-voltar {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Rodapé */
+.rodape {
+    background-color: #28a745;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 1.4rem;
+    text-shadow: 3px 3px 3px #333;
+}
+
+/* */
+.contato {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#nossos-produtos{
+    color: #f4f4f4;
+    text-shadow: 3px 3px 3px #333;
+}
+
+.container-sobre{
+    display: flex;
+    justify-content: center;
+}
+
+.container-sobre div{
+    width: 30%;
+}
+
+.container-sobre div h2{
+    color: #f4f4f4;
+    text-shadow: 3px 3px 3px #333;
+}
+.container-sobre div p{
+    color: #f4f4f4;
+    text-shadow: 3px 3px 3px #333;
+}
